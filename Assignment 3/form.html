@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style2.css">
+    <title>Form</title>
+</head>
+<body>
+    <div id="box">
+        <div class="heading">
+            Hello!!! Now Fill the Form
+        </div>
+        <div class="note">
+            '*' is the required fields.
+        </div>
+        <form action="form.html" method="post">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="Firstname"> First Name:</label> 
+                <input type="text" required> *
+                
+                <label for="lastName"> Last Name:</label>
+                <input type="text" required> *
+                <br>
+                <br>
+                <label for="email"> Email :</label>
+                <input type="email" required> *
+                <br>
+                <br>
+                <label for="ContactNo"> Contact :</label>
+                <input type="number" required> *
+
+
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Skills</legend>
+                <!-- <fieldset>
+                    <legend>Qualifcations:</legend>
+                    <label for="Sports">High School</label>
+                    <input type="checkbox" name="cricket" id="">
+                    
+                    <label for="Sports">Diploma</label>
+                    <input type="checkbox" name="Tennis" id="">
+
+                    <label for="Sports">Graduation</label>
+                    <input type="checkbox" name="Graduation" id="">
+
+                    <label for="Sports">Post Graduation</label>
+                    <input type="checkbox" name="PGraduation" id="">
+                </fieldset> -->
+                <fieldset>
+                    <legend>Sports:</legend>
+                    <label for="Sports">Cricket</label>
+                    <input type="checkbox" name="cricket" id="">
+                    <label for="Sports">football</label>
+                    <input type="checkbox" name="football" id="">
+                    <label for="Sports">Tennis</label>
+                    <input type="checkbox" name="Tennis" id="">
+                    <label for="Sports">BaseBall</label>
+                    <input type="checkbox" name="BaseBall" id="">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Art :</legend>
+                    <label for="Sports">Music</label>
+                    <input type="checkbox" name="cricket" id="">
+                    <label for="Sports">Dance</label>
+                    <input type="checkbox" name="football" id="">
+                    <label for="Sports">Drama</label>
+                    <input type="checkbox" name="Tennis" id="">
+                    <label for="Sports">Artist</label>
+                    <input type="checkbox" name="BaseBall" id="">
+                </fieldset>
+                
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Gender :</legend>
+                <p>
+                    <input type="radio" name="gender" value="male" checked> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                    <input type="radio" name="gender" value="other"> Other
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Major</legend>
+                <select id="dropdown">
+                    <option value="">SELECT</option>
+                    <option value="arts">ARTS</option>
+                    <option value="business">BUSINESS</option>
+                    <option value="science">SCIENCE</option>
+                </select>
+            </fieldset>
+
+            <div class="heading">
+                <input type="button" value="submit">
+            </div>
+
+        </form>
+        
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+body{
+    background-color: antiquewhite;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#box{
+    border-radius: 10px;
+    height: 700px;
+    background: rgb(226, 226, 154);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    width: 70%;
+}
+.heading{
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: capitalize;
+}
+.note{
+    padding: 10px;
+    margin: 20px;
+}
