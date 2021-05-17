@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Side Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet"> <!-- for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Raleway:wght@500;600&display=swap"
+    rel="stylesheet">
+  <script src="assets/vendor/font-awesome/js/all.min.js"></script>
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <!--for icons -->
+</head>
+
+<body>
+  <!-- ========= Modal ========-->
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" style="float: right;">&times;</span>
+      <div class="row">
+        <div class="column3">
+          <input type="text" placeholder="Login or Email" style="margin: 0px 0px 8px 0px;">
+          <input type="text" placeholder="Password" style="margin: 0px 0px 8px 0px;"><br>
+          <input type="checkbox" id="check" name="for_pass" value="" style=" margin: 0px 7px 10px 0px;"><label
+            for="vehicle1">Forget Password</label><br>
+          <button class="read_more" style="padding: 7px 15px;">LOGIN</button>
+        </div>
+
+
+
+        <div class="column3" style=" align-self: center;">
+          <h4>YOU CAN LOGIN USING YOUR SOCIAL PROFILE</h4>
+          <h6>CONNECT WITH</h6>
+          <a href="#"><i class='bx bxl-facebook-square bx-md' style='color:#0388fc'></i></a>
+          <a href="#"><i class='bx bxl-twitter bx-md' style='color:#0bb0f0'></i></a>
+          <a href="#"><i class='bx bxl-google bx-md' style='color:#6ab6f5'></i></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-lg-block">
+    <div class="container">
+      <div class="contact-info mr-auto">
+        <p class="welcome">welcome to our website</p>
+      </div>
+
+      <div class="social-links">
+        <a href="#" class="login" id="myBtn"><i class="icofont-user-alt-3" style="padding-right: 30px;"> LOGIN</i></a>
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <nav class="navbar">
+    <div class="container d-flex">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <!-- <i class="fas fa-bars"></i> -->
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#F0F0F0" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#F0F0F0" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#F0F0F0" stroke-width="5" />
+          </svg>
+        </a>
+      </span>
+      <div class="logo">
+        <a href="#">
+          <img src="assets/images/dummy-logo.png" height="60">
+        </a>
+      </div>
+      <ul class="navbar-nav">
+        <li id="cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+        <li><a href="#"><i class="fas fa-search"></i></a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a class="dropdown" href="#">Gallery</a></li>
+        <li><a class="dropdown" href="#">News & Blog</a></li>
+        <li><a class="dropdown" href="#">Features</a></li>
+        <li><a class="dropdown" href="#">Store</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a class="dropdown" href="#">Home</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About us</a>
+    <a href="#">Store</a>
+    <a href="#">Features</a>
+    <a href="#">News & blog</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+    <a href="#"><i class="fas fa-search"></i></a>
+  </div>
+
+
+  <div class="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 text-center text-lg-left">
+          <h1 class="cta-title">All Posts</h1>
+        </div>
+        <div class="text-lg-right">
+          <h6>
+            <ul class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li style="color:  #80B500;;">All Post</li>
+            </ul>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- main content -->
+  <section id="main_content">
+    <div class="container">
+      <div class="row">
+        <div class="column left border-right" style="background-color:#fff;">
+          <div class="post">
+            <div class="img">
+              <img class="images" src="assets/images/stock.jpg">
+            </div>
+            <h3 class="Post_title">GMOs: Your Right To Know</h3>
+            <div class="post-info">
+              <span class="date">
+                November 2, 2015
+              </span>
+              &sol;
+              <span class="about_post">1
+                <i class="fas fa-comment"></i>
+
+              </span>
+              <span class="likes">5
+                <i class="fas fa-heart"></i>
+              </span>
+
+            </div>
+            <div class="describtion">
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+            <button class="read_more">READ MORE</button>
+          </div>
+          <hr class="post_line">
+
+
+          <div class="post">
+            <div class="img">
+              <img class="images" src="assets/images/stock1.jpg">
+            </div>
+            <h3 class="Post_title">GMOs: Your Right To Know</h3>
+            <div class="post-info">
+              <span class="date">
+                November 2, 2015
+              </span>
+              &sol;
+              <span class="about_post">1
+                <i class="fas fa-comment"></i>
+
+              </span>
+              <span class="likes">5
+                <i class="fas fa-heart"></i>
+              </span>
+
+            </div>
+            <div class="describtion">
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+            <button class="read_more">READ MORE</button>
+          </div>
+          <hr class="post_line">
+
+
+          <div class="post">
+            <div class="img">
+              <img class="images" src="assets/images/stock2.jpg">
+            </div>
+            <h3 class="Post_title">GMOs: Your Right To Know</h3>
+            <div class="post-info">
+              <span class="date">
+                November 2, 2015
+              </span>
+              &sol;
+              <span class="about_post">1
+                <i class="fas fa-comment"></i>
+
+              </span>
+              <span class="likes">5
+                <i class="fas fa-heart"></i>
+              </span>
+
+            </div>
+            <div class="describtion">
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+            <button class="read_more">READ MORE</button>
+          </div>
+          <!-- <hr class="post_line"> -->
+        </div>
+
+        <div class="column right" style="background-color:#fff;">
+          <div class="sidebar_inner widget_area_inner">
+            <aside id="categories-4" class="widget_number_1 widget widget_categories">
+              <h5 class="widget_title">Categories</h5>
+              <ul>
+                <li class="cat-item"><a href="#">Masonry (2 columns)</a>
+                </li>
+                <li class="cat-item"><a href="#">Masonry (3 columns)</a>
+                </li>
+                <li class="cat-item"><a href="#">Portfolio (2 columns)</a>
+                </li>
+                <li class="cat-item"><a href="#">Portfolio (3 columns)</a>
+                </li>
+                <li class="cat-item"><a href="#">Post
+                    Formats</a>
+                </li>
+              </ul>
+            </aside>
+            <hr class="division">
+
+
+
+            <aside id="categories-4" class="widget_number_1 widget widget_categories">
+              <h5 class="widget_title" style="padding-top: 30px; padding-bottom:0px;">Categories</h5>
+          </div>
+
+          <div class="custom-select-wrapper">
+            <div onclick="toggleSelect()" class="custom-select">
+              <div class="custom-select-trigger">
+                <span>Something</span>
+                <div class="arrow">
+                  <svg width="10px" height="6px" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1l4 4 4-4" stroke="#85858F" stroke-width="1.5" fill="none" fill-rule="evenodd"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <div class="custom-options">
+                <span class="custom-option selected">Something 1</span>
+                <span class="custom-option">Something 2</span>
+                <span class="custom-option">Something 3</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="division">
+
+          <aside id="categories-4" class="widget_number_1 widget widget_categories" style="padding-top: 50px;">
+            <h5 class="widget_title">TAGS</h5>
+            <p class="describtion">
+              <button class="tag_more">FOOD</button>
+              <button class="tag_more">FRUIT</button>
+              <button class="tag_more">FOOD</button>
+              <button class="tag_more">FRUIT</button>
+
+            </p>
+          </aside>
+
+          <hr class="division">
+
+          <aside id="categories-4" class="widget_number_1 widget widget_categories" style="padding-top: 50px;">
+            <h5 class="widget_title">TEXT WIDGET</h5>
+            <p class="describtion" style="justify-content: stretch;">
+              Nam tincidunt faucibus antec blandit<br>
+              tortor dignissim non lorem ipsum<br>
+              dolorem sit amet aute irure dolor in<br>
+              reprehenderit.
+            </p>
+          </aside>
+
+          <hr class="division">
+
+          <aside id="categories-4" class="widget_number_1 widget widget_categories" style="padding-top: 50px;">
+            <h5 class="widget_title">RECENT POST</h5>
+            <p class="describtion" style="justify-content: stretch;">
+            <div class="row imag">
+              <img src="assets/images/stock.jpg" height="60px;">
+              <a href="#" class="blog-link">
+                <h4 style="padding: 19px 0px 0px 15px; font-size: 12px;">GMOs: Your Right To Know</h4>
+              </a>
+            </div>
+            <div class="row imag">
+              <img src="assets/images/stock3.jpg" height="60px;">
+              <a href="#" class="blog-link">
+                <h4 style="padding: 19px 0px 0px 15px; font-size: 12px;">Healthy Food Guide</h4>
+              </a>
+            </div>
+            </p>
+          </aside>
+
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <div class="container">
+      <hr class="post_line">
+      <div class="row ">
+        <div class="column">
+          <h2>CONNECT WITH US</h2>
+          <p class="describtion">
+            Nam tincidunt faucibus antec blandit<br>
+            tortor dignissim non lorem ipsum<br>
+            dolorem sit amet aute irure dolor in<br>
+            reprehenderit.
+          </p>
+          <div class="social-tag">
+            <a href="#"><i class='bx bxl-facebook-square bx-md' style='color:#0388fc'></i></a>
+            <a href="#"><i class='bx bxl-twitter bx-md' style='color:#0bb0f0'></i></a>
+            <a href="#"><i class='bx bxl-instagram bx-md' style='color:#0769bf'></i></a>
+            <a href="#"><i class='bx bxl-behance bx-md' style='color:#0096f4'></i></a>
+            <a href="#"><i class='bx bxl-dribbble bx-md' style='color:#0096f4'></i></a>
+          </div>
+        </div>
+        <div class="column">
+          <h2>RECENT POSTS</h2>
+          <p class="describtion">
+          <div class="row imag">
+            <img src="assets/images/stock.jpg" height="60px;">
+            <a href="#" class="blog-link">
+              <h4 style="padding: 19px 0px 0px 15px;">GMOs: Your Right To Know</h4>
+            </a>
+          </div>
+          <div class="row imag">
+            <img src="assets/images/stock3.jpg" height="60px;">
+            <a href="#" class="blog-link">
+              <h4 style="padding: 19px 0px 0px 15px;">Healthy Food Guide</h4>
+            </a>
+          </div>
+          </p>
+        </div>
+        <div class="column">
+          <h2>TAGS</h2>
+          <p class="describtion">
+            <button class="tag_more">FOOD</button>
+            <button class="tag_more">FRUIT</button>
+            <button class="tag_more">FOOD</button>
+            <button class="tag_more">FRUIT</button>
+
+          </p>
+        </div>
+        <div class="column">
+          <h2>BLOG</h2>
+          <p class="describtion">
+
+            <a href="#" class="blog-link">
+              <h4>GMOs: Your Right To Know</h4>
+            </a>
+            <a href="#" class="blog-link">
+              <h4>GMOs: Your Right To Know</h4>
+            </a>
+            <a href="#" class="blog-link">
+              <h4>GMOs: Your Right To Know</h4>
+            </a>
+            <a href="#" class="blog-link">
+              <h4>GMOs: Your Right To Know</h4>
+            </a>
+            <a href="#" class="blog-link">
+              <h4>GMOs: Your Right To Know</h4>
+            </a>
+
+          </p>
+        </div>
+      </div>
+      <hr class="post_line">
+    </div>
+
+
+    <div class="credits">
+      <div class="container">
+        <div class="column2">
+          <h5 class="small_caption">Terms and conditions apply*.</h5>
+          <h2 class="big_caption">Join Our Store Now</h2>
+          <a href="#"><img src="assets/images/dummy-logo.png" style="height: 100px; padding-bottom: 35px;"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-circle-up" style="font-size: 40px;"></i></a>
+  <!-- back to top -->
+
+
+
+
+
+
+  <script src="main.js"></script>
+  <!-- main content -->
+  <script>
+    //for toggle button
+
+    for (const dropdown of document.querySelectorAll(".custom-select-wrapper")) {
+      dropdown.addEventListener('click', function () {
+        this.querySelector('.custom-select').classList.toggle('open');
+        this.querySelector('.custom-select').classList.toggle('open-toggle');
+      })
+    }
+  </script>
+
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>

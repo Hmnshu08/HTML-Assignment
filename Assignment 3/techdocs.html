@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style5.css">
+    <title>TechDocs</title>
+</head>
+
+<body>
+
+    <ul id="navbar">
+        <li><a class="active" href="#home">Tech Docs</a></li>
+        <li style="float:right"><a href="#news">features</a></li>
+        <li style="float:right"><a href="#contact">Contact</a></li>
+        <li style="float:right"><a href="#about">About</a></li>
+    </ul>
+
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'topic1')" id="defaultOpen">Overview</button>
+        <button class="tablinks" onclick="openCity(event, 'topic2')">Introduction</button>
+        <button class="tablinks" onclick="openCity(event, 'topic3')">What you should already know</button>
+        <button class="tablinks" onclick="openCity(event, 'topic4')">JavaScript and Java</button>
+
+    </div>
+
+    <div id="topic1" class="tabcontent">
+        <h3>JavaScript</h3>
+        <p>JavaScript is the world's most popular programming language.</p>
+
+        <p> JavaScript is the programming language of the Web.</p>
+
+        <p> JavaScript is easy to learn.</p>
+
+        <p> This tutorial will teach you JavaScript from basic to advanced.</p>
+    </div>
+
+    <div id="topic2" class="tabcontent">
+        <main id="main-doc">
+
+
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>
+                        JavaScript is a cross-platform, object-oriented scripting language. It
+                        is a small and lightweight language. Inside a host environment (for
+                        example, a web browser), JavaScript can be connected to the objects of
+                        its environment to provide programmatic control over them.
+                    </p>
+                    <br>
+                    <p>
+                        JavaScript contains a standard library of objects, such as Array, Date,
+                        and Math, and a core set of language elements such as operators, control
+                        structures, and statements. Core JavaScript can be extended for a
+                        variety of purposes by supplementing it with additional objects; for
+                        example:
+                    </p>
+                    <br><br><br>
+                    <ol>
+                        <li>
+                            Client-side JavaScript extends the core language by supplying objects
+                            to control a browser and its Document Object Model (DOM). For example,
+                            client-side extensions allow an application to place elements on an
+                            HTML form and respond to user events such as mouse clicks, form input,
+                            and page navigation.
+                        </li><br>
+                        <li>
+                            Server-side JavaScript extends the core language by supplying objects
+                            relevant to running JavaScript on a server. For example, server-side
+                            extensions allow an application to communicate with a database,
+                            provide continuity of information from one invocation to another of
+                            the application, or perform file manipulations on a server.
+                        </li><br>
+                    </ol>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <div id="topic3" class="tabcontent">
+        <header>What you should already know</header>
+        <article>
+            <p>This guide assumes you have the following basic background:</p>
+            <br>
+            <ol>
+                <li>
+                    A general understanding of the Internet and the World Wide Web (WWW).
+                </li>
+                <br>
+                <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                <br>
+                <li>
+                    Some programming experience. If you are new to programming, try one of
+                    the tutorials linked on the main page about JavaScript.
+                </li>
+                <br>
+            </ol>
+        </article>
+
+    </div>
+
+    <div id="topic4" class="tabcontent">
+        <header>JavaScript and Java</header>
+        <article>
+            <p>
+                JavaScript and Java are similar in some ways but fundamentally different
+                in some others. The JavaScript language resembles Java but does not have
+                Java's static typing and strong type checking. JavaScript follows most
+                Java expression syntax, naming conventions and basic control-flow
+                constructs which was the reason why it was renamed from LiveScript to
+                JavaScript.
+            </p>
+            <br>
+            <p>
+                In contrast to Java's compile-time system of classes built by
+                declarations, JavaScript supports a runtime system based on a small
+                number of data types representing numeric, Boolean, and string values.
+                JavaScript has a prototype-based object model instead of the more common
+                class-based object model. The prototype-based model provides dynamic
+                inheritance; that is, what is inherited can vary for individual objects.
+                JavaScript also supports functions without any special declarative
+                requirements. Functions can be properties of objects, executing as
+                loosely typed methods.
+            </p>
+            <br>
+            <p>
+                JavaScript is a very free-form language compared to Java. You do not
+                have to declare all variables, classes, and methods. You do not have to
+                be concerned with whether methods are public, private, or protected, and
+                you do not have to implement interfaces. Variables, parameters, and
+                function return types are not explicitly typed.
+            </p>
+        </article>
+    </div>
+
+
+
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
